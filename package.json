@@ -1,0 +1,7 @@
+{
+  "name": "clean-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Victor Alencar <munternl13@gmail.com>",
+  "license": "MIT"
+}
