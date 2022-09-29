@@ -21,5 +21,10 @@ export const MongoHelper = {
   async getValue (collection: Collection, insertedId: ObjectId): Promise<any> {
     const result = await collection.findOne({ _id: insertedId })
     return result
+  },
+
+  map: (collection: any): any => {
+    const { _id, ...collectionWithoutId } = collection
+    return Object.assign({}, collectionWithoutId, { id: _id.toString() })
   }
 }
