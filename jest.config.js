@@ -4,7 +4,10 @@ module.exports = {
   coverageProvider: 'v8',
 
   roots: ['<rootDir>/src'],
-  collectCoverageFrom: ['<rootDir>/src/**/*.ts'],
+  collectCoverageFrom: [
+    '<rootDir>/src/**/*.ts',
+    '!<rootDir>/src/main/**'
+  ],
   coverageDirectory: 'coverage',
   testEnvironment: 'node',
   transform: {
