@@ -7,3 +7,5 @@ MongoHelper.connect(env.mongoUrl)
     app.listen(env.port, () => console.log(`Server running at http://localhost:${env.port}`))
   })
   .catch(console.error)
+
+// Path: src\main\config\app.ts
